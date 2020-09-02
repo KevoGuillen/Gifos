@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis Guifos</title>
+    <link rel="stylesheet" href="./Build/styles.css">
+    <link rel="stylesheet" href="./Build/styles-dark.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,400i,700,700i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-title"></div>
+        <div class="navbar">
+            <a href="./index.html" class="logo">
+                <img class="logo-img" src="./IMAGES/gifOF_logo.png" alt="Logo">
+            </a>
+            <div class="buttons-wrapper">
+                <div class="nav-button"><a href="./mygifs.html">Crear Guifos</a></div>
+                <div class="dropdown-wrapper">
+                    <button class="nav-button">Elegir tema</button>
+                    <div class="dropdown-btn"><img src="./IMAGES/dropdown.svg" alt="Dropdown"></div>
+                    <div class="dropdown-menu">
+                    <button class="light-theme-btn selected" disabled>Sailor Day</button>
+                    <button class="dark-theme-btn">Sailor Night</button>
+                </div>
+                </div>
+                <span class="my-gif">Mis Guifos</span>
+            </div>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="gif-creator">
+            <div class="top-bar">Crear Guifos</div>
+            <img class="window-img" src="./IMAGES/window_img.png" alt="Window">
+            <div class="text-wrap">
+                <h3>Aquí podrás crear tus propios guifos</h3>
+                <span>Crear tu <b><i>guifo</i></b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. 
+                    Los pasos para crear tu guifo son:<br><br></span>
+                <p><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                <p><b>2)</b> Capturar tu momento guifo</p>
+                <p><b>3)</b> Revisar el momento</p>
+                <p><b>4)</b> Listo para subir y compartir!</p>
+                <p>¿Quieres comenzar a crear tu <b><i>guifo</i></b> ahora?</p>
+            </div>
+            <div class="btn-wrapper">
+                <button class="action-btn">Cancelar</button>
+                <button class="action-btn">Comenzar</button>
+            </div>    
+        </div>
+        <div class="trending-container">
+            <div class="title">Mis guifos</div>
+            <div class="gif-grid"></div>
+        </div>
+    </div>    
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>           
+    <script src="mygifs.js"></script>   
+</body>
+</html>

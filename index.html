@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gif.OS</title>
+    <link rel="stylesheet" href="./Build/styles.css">
+    <link rel="stylesheet" href="./Build/styles-dark.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,400i,700,700i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-title"></div>
+        <div class="navbar">
+            <a href="./index.html" class="logo">
+                <img class="logo-img" src="./IMAGES/gifOF_logo.png" alt="Logo">
+            </a>
+            <div class="buttons-wrapper">
+                <div class="nav-button"><a href="./mygifs.html">Crear Guifos</a></div>
+                <div class="dropdown-wrapper">
+                    <button class="nav-button">Elegir tema</button>
+                    <div class="dropdown-btn"><img src="./IMAGES/dropdown.svg"  alt="dropdown"></div>
+                    <div class="dropdown-menu">
+                    <button class="light-theme-btn selected" disabled>Sailor Day</button>
+                    <button class="dark-theme-btn">Sailor Night</button>
+                </div>
+                </div>
+                <span class="my-gif"><a href="./mygifs.html">Mis Guifos</a></span>
+            </div>
+        </div>
+    </header>        
+    <div class="content-wrapper">
+        <div class="search-container">
+            <div class="top-bar">Buscar</div>
+            <input type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+            <div class="search-button"><img id="search-icon" src="./IMAGES/lupa_inactive.svg" alt="Lupa"> Buscar</div>
+            <div class="results-tab">
+                <span>Sugerencias:</span>
+                <div class="result-container"></div>
+                <div class="result-container"></div>
+                <div class="result-container"></div>
+            </div>    
+        </div>
+        <div class="today-container">
+            <div class="title">Hoy te sugerimos:</div>
+            <div class="gif-grid">
+                    <div class="gif-container"><div class="top-window">#Hashtag</div><img class="close-icon" src="./IMAGES/button_close.svg" alt="close"><a class="see-more" href="" target="_blank">Ver más...</a></div>
+                    <div class="gif-container"><div class="top-window">#Hashtag</div><img class="close-icon" src="./IMAGES/button_close.svg" alt="close"><a class="see-more" href="" target="_blank">Ver más...</a></div>
+                    <div class="gif-container"><div class="top-window">#Hashtag</div><img class="close-icon" src="./IMAGES/button_close.svg" alt="close"><a class="see-more" href="" target="_blank">Ver más...</a></div>
+                    <div class="gif-container"><div class="top-window">#Hashtag</div><img class="close-icon" src="./IMAGES/button_close.svg" alt="close"><a class="see-more" href="" target="_blank">Ver más...</a></div>
+            </div>    
+        </div>
+        <div class="trending-container">
+            <div class="title">Tendencias:</div>
+            <div class="gif-grid"></div> 
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
